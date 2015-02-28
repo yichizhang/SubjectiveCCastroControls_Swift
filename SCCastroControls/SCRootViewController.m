@@ -7,7 +7,7 @@
 //
 
 #import "SCRootViewController.h"
-#import "SCPlaybackViewController.h"
+#import "SCCastroControls-Swift.h"
 
 @interface SCRootViewController ()
 @property (nonatomic, strong) SCPlaybackViewController *playbackViewController;
@@ -36,7 +36,7 @@
     playbackItem.totalTime = 60. * 10.;
     playbackItem.elapsedTime = 0.;
     
-    self.playbackViewController.playbackItem = playbackItem;
+	[self.playbackViewController setPlaybackItem:playbackItem];
 }
 
 @end
