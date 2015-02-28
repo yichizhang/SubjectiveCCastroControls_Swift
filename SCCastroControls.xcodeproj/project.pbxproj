@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1260C6021AA1F42100EFD82C /* SCTapHintBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260C6011AA1F42100EFD82C /* SCTapHintBehavior.swift */; };
 		A817E7B918B8102800F45B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7B818B8102800F45B9D /* Foundation.framework */; };
 		A817E7BB18B8102800F45B9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BA18B8102800F45B9D /* CoreGraphics.framework */; };
 		A817E7BD18B8102800F45B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BC18B8102800F45B9D /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		A826602618B8A72E005AB68A /* SCControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602518B8A72E005AB68A /* SCControlsView.m */; };
 		A826602918B8A76A005AB68A /* SCTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602818B8A76A005AB68A /* SCTimelineView.m */; };
 		A826602F18B97A08005AB68A /* SCPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602E18B97A08005AB68A /* SCPlaybackItem.m */; };
-		A84F9C6F18B9825F00844F0A /* SCTapHintBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = A84F9C6E18B9825F00844F0A /* SCTapHintBehavior.m */; };
 		A84F9C7618B983FE00844F0A /* SCScrubbingBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = A84F9C7518B983FE00844F0A /* SCScrubbingBehavior.m */; };
 		A8D97BF418B8186A006BC837 /* SCPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D97BF318B8186A006BC837 /* SCPlaybackViewController.m */; };
 /* End PBXBuildFile section */
@@ -39,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1260C6001AA1F42000EFD82C /* SCCastroControls-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCCastroControls-Bridging-Header.h"; sourceTree = "<group>"; };
+		1260C6011AA1F42100EFD82C /* SCTapHintBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCTapHintBehavior.swift; sourceTree = "<group>"; };
 		A817E7B518B8102800F45B9D /* SCCastroControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCCastroControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A817E7B818B8102800F45B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A817E7BA18B8102800F45B9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +65,6 @@
 		A826602818B8A76A005AB68A /* SCTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTimelineView.m; sourceTree = "<group>"; };
 		A826602D18B97A08005AB68A /* SCPlaybackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlaybackItem.h; sourceTree = "<group>"; };
 		A826602E18B97A08005AB68A /* SCPlaybackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackItem.m; sourceTree = "<group>"; };
-		A84F9C6D18B9825F00844F0A /* SCTapHintBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTapHintBehavior.h; sourceTree = "<group>"; };
-		A84F9C6E18B9825F00844F0A /* SCTapHintBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTapHintBehavior.m; sourceTree = "<group>"; };
 		A84F9C7418B983FE00844F0A /* SCScrubbingBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCScrubbingBehavior.h; sourceTree = "<group>"; };
 		A84F9C7518B983FE00844F0A /* SCScrubbingBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCScrubbingBehavior.m; sourceTree = "<group>"; };
 		A8D97BF218B8186A006BC837 /* SCPlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlaybackViewController.h; sourceTree = "<group>"; };
@@ -147,6 +147,7 @@
 				A817E7C118B8102800F45B9D /* InfoPlist.strings */,
 				A817E7C418B8102800F45B9D /* main.m */,
 				A817E7C618B8102800F45B9D /* SCCastroControls-Prefix.pch */,
+				1260C6001AA1F42000EFD82C /* SCCastroControls-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -203,8 +204,7 @@
 		A84F9C7318B983AE00844F0A /* UIDynamicBehavior classes */ = {
 			isa = PBXGroup;
 			children = (
-				A84F9C6D18B9825F00844F0A /* SCTapHintBehavior.h */,
-				A84F9C6E18B9825F00844F0A /* SCTapHintBehavior.m */,
+				1260C6011AA1F42100EFD82C /* SCTapHintBehavior.swift */,
 				A84F9C7418B983FE00844F0A /* SCScrubbingBehavior.h */,
 				A84F9C7518B983FE00844F0A /* SCScrubbingBehavior.m */,
 			);
@@ -311,7 +311,7 @@
 				A826602F18B97A08005AB68A /* SCPlaybackItem.m in Sources */,
 				A8D97BF418B8186A006BC837 /* SCPlaybackViewController.m in Sources */,
 				A817E7C918B8102800F45B9D /* SCAppDelegate.m in Sources */,
-				A84F9C6F18B9825F00844F0A /* SCTapHintBehavior.m in Sources */,
+				1260C6021AA1F42100EFD82C /* SCTapHintBehavior.swift in Sources */,
 				A826602918B8A76A005AB68A /* SCTimelineView.m in Sources */,
 				A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */,
 				A817E7C518B8102800F45B9D /* main.m in Sources */,
@@ -436,10 +436,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCCastroControls/SCCastroControls-Prefix.pch";
 				INFOPLIST_FILE = "SCCastroControls/SCCastroControls-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SCCastroControls/SCCastroControls-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -450,10 +454,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SCCastroControls/SCCastroControls-Prefix.pch";
 				INFOPLIST_FILE = "SCCastroControls/SCCastroControls-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SCCastroControls/SCCastroControls-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};

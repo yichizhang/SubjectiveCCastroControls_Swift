@@ -10,7 +10,7 @@
 #import "SCControlsView.h"
 #import "SCTimelineView.h"
 #import "SCScrubbingBehavior.h"
-#import "SCTapHintBehavior.h"
+#import "SCCastroControls-Swift.h"
 
 @interface SCPlaybackViewController () <UICollisionBehaviorDelegate, SCControlsViewDelegate>
 
@@ -68,7 +68,7 @@ const CGFloat kKeylineHeight = 1.f;
     keylineView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.25f];
     [self.view addSubview:keylineView];
     
-    self.tapHintBehavior = [[SCTapHintBehavior alloc] initWithItem:@[self.controlsView]];
+    self.tapHintBehavior = [[SCTapHintBehavior alloc] initWithItems:@[self.controlsView]];
     self.tapHintBehavior.collisionBehavior.collisionDelegate = self;
     self.tapHintBehavior.collisionBehavior.translatesReferenceBoundsIntoBoundary = NO;
 
