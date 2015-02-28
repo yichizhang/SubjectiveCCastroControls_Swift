@@ -9,7 +9,7 @@
 #import "SCPlaybackViewController.h"
 #import "SCControlsView.h"
 #import "SCTimelineView.h"
-#import "SCScrubbingBehavior.h"
+
 #import "SCCastroControls-Swift.h"
 
 @interface SCPlaybackViewController () <UICollisionBehaviorDelegate, SCControlsViewDelegate>
