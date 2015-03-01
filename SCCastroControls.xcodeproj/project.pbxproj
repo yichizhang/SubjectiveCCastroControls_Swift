@@ -10,6 +10,7 @@
 		1260C6021AA1F42100EFD82C /* SCTapHintBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260C6011AA1F42100EFD82C /* SCTapHintBehavior.swift */; };
 		1260C6041AA1FDF000EFD82C /* SCScrubbingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260C6031AA1FDF000EFD82C /* SCScrubbingBehavior.swift */; };
 		1260C6061AA2020100EFD82C /* SCPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260C6051AA2020100EFD82C /* SCPlaybackViewController.swift */; };
+		12C79C261AA37BB7007A6767 /* SCTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C79C251AA37BB7007A6767 /* SCTimelineView.swift */; };
 		A817E7B918B8102800F45B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7B818B8102800F45B9D /* Foundation.framework */; };
 		A817E7BB18B8102800F45B9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BA18B8102800F45B9D /* CoreGraphics.framework */; };
 		A817E7BD18B8102800F45B9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BC18B8102800F45B9D /* UIKit.framework */; };
@@ -24,7 +25,6 @@
 		A817E7DE18B8102800F45B9D /* SCCastroControlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7DD18B8102800F45B9D /* SCCastroControlsTests.m */; };
 		A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7E818B8131900F45B9D /* SCRootViewController.m */; };
 		A826602618B8A72E005AB68A /* SCControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602518B8A72E005AB68A /* SCControlsView.m */; };
-		A826602918B8A76A005AB68A /* SCTimelineView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602818B8A76A005AB68A /* SCTimelineView.m */; };
 		A826602F18B97A08005AB68A /* SCPlaybackItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602E18B97A08005AB68A /* SCPlaybackItem.m */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +43,7 @@
 		1260C6011AA1F42100EFD82C /* SCTapHintBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCTapHintBehavior.swift; sourceTree = "<group>"; };
 		1260C6031AA1FDF000EFD82C /* SCScrubbingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCScrubbingBehavior.swift; sourceTree = "<group>"; };
 		1260C6051AA2020100EFD82C /* SCPlaybackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCPlaybackViewController.swift; sourceTree = "<group>"; };
+		12C79C251AA37BB7007A6767 /* SCTimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCTimelineView.swift; sourceTree = "<group>"; };
 		A817E7B518B8102800F45B9D /* SCCastroControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCCastroControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A817E7B818B8102800F45B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A817E7BA18B8102800F45B9D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,8 +64,6 @@
 		A817E7E818B8131900F45B9D /* SCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootViewController.m; sourceTree = "<group>"; };
 		A826602418B8A72E005AB68A /* SCControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCControlsView.h; sourceTree = "<group>"; };
 		A826602518B8A72E005AB68A /* SCControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCControlsView.m; sourceTree = "<group>"; };
-		A826602718B8A76A005AB68A /* SCTimelineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTimelineView.h; sourceTree = "<group>"; };
-		A826602818B8A76A005AB68A /* SCTimelineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTimelineView.m; sourceTree = "<group>"; };
 		A826602D18B97A08005AB68A /* SCPlaybackItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPlaybackItem.h; sourceTree = "<group>"; };
 		A826602E18B97A08005AB68A /* SCPlaybackItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPlaybackItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -173,8 +172,7 @@
 			children = (
 				A826602418B8A72E005AB68A /* SCControlsView.h */,
 				A826602518B8A72E005AB68A /* SCControlsView.m */,
-				A826602718B8A76A005AB68A /* SCTimelineView.h */,
-				A826602818B8A76A005AB68A /* SCTimelineView.m */,
+				12C79C251AA37BB7007A6767 /* SCTimelineView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -303,13 +301,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C79C261AA37BB7007A6767 /* SCTimelineView.swift in Sources */,
 				A826602618B8A72E005AB68A /* SCControlsView.m in Sources */,
 				1260C6041AA1FDF000EFD82C /* SCScrubbingBehavior.swift in Sources */,
 				A826602F18B97A08005AB68A /* SCPlaybackItem.m in Sources */,
 				A817E7C918B8102800F45B9D /* SCAppDelegate.m in Sources */,
 				1260C6061AA2020100EFD82C /* SCPlaybackViewController.swift in Sources */,
 				1260C6021AA1F42100EFD82C /* SCTapHintBehavior.swift in Sources */,
-				A826602918B8A76A005AB68A /* SCTimelineView.m in Sources */,
 				A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */,
 				A817E7C518B8102800F45B9D /* main.m in Sources */,
 			);

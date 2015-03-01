@@ -4,4 +4,3 @@
 
 #import "SCPlaybackItem.h"
 #import "SCControlsView.h"
-#import "SCTimelineView.h"
