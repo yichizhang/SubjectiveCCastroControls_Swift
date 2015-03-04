@@ -11,6 +11,7 @@
 		1260C6041AA1FDF000EFD82C /* SCScrubbingBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260C6031AA1FDF000EFD82C /* SCScrubbingBehavior.swift */; };
 		1260C6061AA2020100EFD82C /* SCPlaybackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1260C6051AA2020100EFD82C /* SCPlaybackViewController.swift */; };
 		12B869BA1AA6716200F3E252 /* SCPlaybackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B869B91AA6716200F3E252 /* SCPlaybackItem.swift */; };
+		12B869BC1AA69FBC00F3E252 /* SCControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B869BB1AA69FBC00F3E252 /* SCControlsView.swift */; };
 		12C79C261AA37BB7007A6767 /* SCTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C79C251AA37BB7007A6767 /* SCTimelineView.swift */; };
 		A817E7B918B8102800F45B9D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7B818B8102800F45B9D /* Foundation.framework */; };
 		A817E7BB18B8102800F45B9D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A817E7BA18B8102800F45B9D /* CoreGraphics.framework */; };
@@ -25,7 +26,6 @@
 		A817E7DC18B8102800F45B9D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A817E7DA18B8102800F45B9D /* InfoPlist.strings */; };
 		A817E7DE18B8102800F45B9D /* SCCastroControlsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7DD18B8102800F45B9D /* SCCastroControlsTests.m */; };
 		A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A817E7E818B8131900F45B9D /* SCRootViewController.m */; };
-		A826602618B8A72E005AB68A /* SCControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = A826602518B8A72E005AB68A /* SCControlsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +44,7 @@
 		1260C6031AA1FDF000EFD82C /* SCScrubbingBehavior.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCScrubbingBehavior.swift; sourceTree = "<group>"; };
 		1260C6051AA2020100EFD82C /* SCPlaybackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCPlaybackViewController.swift; sourceTree = "<group>"; };
 		12B869B91AA6716200F3E252 /* SCPlaybackItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCPlaybackItem.swift; sourceTree = "<group>"; };
+		12B869BB1AA69FBC00F3E252 /* SCControlsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCControlsView.swift; sourceTree = "<group>"; };
 		12C79C251AA37BB7007A6767 /* SCTimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCTimelineView.swift; sourceTree = "<group>"; };
 		A817E7B518B8102800F45B9D /* SCCastroControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCCastroControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A817E7B818B8102800F45B9D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,8 +64,6 @@
 		A817E7DD18B8102800F45B9D /* SCCastroControlsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCCastroControlsTests.m; sourceTree = "<group>"; };
 		A817E7E718B8131900F45B9D /* SCRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCRootViewController.h; sourceTree = "<group>"; };
 		A817E7E818B8131900F45B9D /* SCRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCRootViewController.m; sourceTree = "<group>"; };
-		A826602418B8A72E005AB68A /* SCControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCControlsView.h; sourceTree = "<group>"; };
-		A826602518B8A72E005AB68A /* SCControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCControlsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,9 +168,8 @@
 		A84F9C7018B9838B00844F0A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A826602418B8A72E005AB68A /* SCControlsView.h */,
-				A826602518B8A72E005AB68A /* SCControlsView.m */,
 				12C79C251AA37BB7007A6767 /* SCTimelineView.swift */,
+				12B869BB1AA69FBC00F3E252 /* SCControlsView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -301,12 +299,12 @@
 			files = (
 				12C79C261AA37BB7007A6767 /* SCTimelineView.swift in Sources */,
 				12B869BA1AA6716200F3E252 /* SCPlaybackItem.swift in Sources */,
-				A826602618B8A72E005AB68A /* SCControlsView.m in Sources */,
 				1260C6041AA1FDF000EFD82C /* SCScrubbingBehavior.swift in Sources */,
 				A817E7C918B8102800F45B9D /* SCAppDelegate.m in Sources */,
 				1260C6061AA2020100EFD82C /* SCPlaybackViewController.swift in Sources */,
 				1260C6021AA1F42100EFD82C /* SCTapHintBehavior.swift in Sources */,
 				A817E7E918B8131900F45B9D /* SCRootViewController.m in Sources */,
+				12B869BC1AA69FBC00F3E252 /* SCControlsView.swift in Sources */,
 				A817E7C518B8102800F45B9D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
