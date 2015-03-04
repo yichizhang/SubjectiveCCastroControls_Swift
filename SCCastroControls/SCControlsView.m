@@ -7,6 +7,7 @@
 //
 
 #import "SCControlsView.h"
+#import "SCCastroControls-Swift.h"
 
 @interface SCControlsView ()
 @property (nonatomic, strong) UIImageView *leftGrabHandleView;

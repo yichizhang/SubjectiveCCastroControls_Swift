@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SCPlaybackItem.h"
 
+@class SCPlaybackItem;
 @class SCControlsView;
 
 @protocol SCControlsViewDelegate <NSObject>
