@@ -80,6 +80,7 @@ class SCControlsView : UIView {
 		
 		addSubview(leftGrabHandleView)
 		addSubview(rightGrabHandleView)
+		
 	}
 	
 	required init(coder aDecoder: NSCoder) {
@@ -94,33 +95,55 @@ class SCControlsView : UIView {
 		rewindButton.sizeToFit()
 		fastForwardButton.sizeToFit()
 		
-		/*
-		let views:[UIView] = [
-			leftGrabHandleView,
-			elapsedTimeLabel,
-			rewindButton, playPauseButton, fastForwardButton,
-			remainingTimeLabel,
-			rightGrabHandleView
-		]
-		for (i, v) in enumerate(views) {
-			let x = bounds.width * ( CGFloat(i+1) / CGFloat(views.count+1) )
-			v.center = CGPoint(x: x, y: bounds.midY)
-		}
-		*/
+		playPauseButton.frame = CGRect(
+									x: bounds.midX - (kButtonWidth / 2.0), 
+									y: 0.0, 
+									width: kButtonWidth, 
+									height: bounds.height
+									);
 		
-		self.playPauseButton.frame = CGRectMake(CGRectGetMidX(self.bounds) - (kButtonWidth / 2.0), 0.0, kButtonWidth, CGRectGetHeight(self.bounds));
+		rewindButton.frame = CGRect(
+									x: kButtonEdgeInset, 
+									y: 0.0, 
+									width: kButtonWidth, 
+									height: bounds.height
+									);
 		
-		self.rewindButton.frame = CGRectMake(kButtonEdgeInset, 0.0, kButtonWidth, CGRectGetHeight(self.bounds));
+		fastForwardButton.frame = CGRect(
+									x: bounds.width - kButtonWidth - kButtonEdgeInset, 
+									y: 0.0, 
+									width: kButtonWidth, 
+									height: bounds.height
+									);
 		
-		self.fastForwardButton.frame = CGRectMake(CGRectGetWidth(self.bounds) - kButtonWidth - kButtonEdgeInset, 0.0, kButtonWidth, CGRectGetHeight(self.bounds));
+		elapsedTimeLabel.frame = CGRect(
+									x: rewindButton.frame.minX - elapsedTimeLabel.bounds.width, 
+									y: 0.0, 
+									width: elapsedTimeLabel.bounds.width, 
+									height: bounds.height
+									);
 		
-		self.elapsedTimeLabel.frame = CGRectMake(CGRectGetMinX(self.rewindButton.frame) - CGRectGetWidth(self.elapsedTimeLabel.bounds), 0.0, CGRectGetWidth(self.elapsedTimeLabel.bounds), CGRectGetHeight(self.bounds));
+		remainingTimeLabel.frame = CGRect(
+									x: fastForwardButton.frame.maxX, 
+									y: 0.0, 
+									width: remainingTimeLabel.bounds.width, 
+									height: bounds.height
+									);
 		
-		self.remainingTimeLabel.frame = CGRectMake(CGRectGetMaxX(self.fastForwardButton.frame), 0.0, CGRectGetWidth(self.remainingTimeLabel.bounds), CGRectGetHeight(self.bounds));
+		leftGrabHandleView.frame = CGRect(
+									x: kGrabHandleInset, 
+									y: bounds.midY - leftGrabHandleView.bounds.midY, 
+									width: leftGrabHandleView.bounds.width, 
+									height: leftGrabHandleView.bounds.height
+									);
 		
-		self.leftGrabHandleView.frame = CGRectMake(kGrabHandleInset, CGRectGetMidY(self.bounds) - CGRectGetMidY(self.leftGrabHandleView.bounds), CGRectGetWidth(self.leftGrabHandleView.bounds), CGRectGetHeight(self.leftGrabHandleView.bounds));
-		
-		self.rightGrabHandleView.frame = CGRectMake(CGRectGetWidth(self.bounds) - CGRectGetWidth(self.rightGrabHandleView.bounds) - kGrabHandleInset, CGRectGetMidY(self.bounds) - CGRectGetMidY(self.rightGrabHandleView.bounds), CGRectGetWidth(self.rightGrabHandleView.bounds), CGRectGetHeight(self.rightGrabHandleView.bounds));
+		rightGrabHandleView.frame = CGRect(
+									x: bounds.width - rightGrabHandleView.bounds.width - kGrabHandleInset, 
+									y: bounds.midY - rightGrabHandleView.bounds.midY, 
+									width: rightGrabHandleView.bounds.width, 
+									height: rightGrabHandleView.bounds.height
+									);
+
 	}
 	
 	// MARK: Public
